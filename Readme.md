@@ -14,12 +14,12 @@ go run . // This runs the app
 
 This example uses [Golang](https://go.dev/) as the primary language, [Gin](https://github.com/gin-gonic/gin) as a web framework and `JWT` tokens as a way of authenticating users.
 
-The APIs are quite simple. It has an `authentication` endpoint and CRUD endpoints for music `albums`. Below is a list of all the endpoints.
-`POST /auth`
-`GET /albums`
-`GET /album/:id`
-`POST /album`
-`PUT /album/:id`
+The APIs are quite simple. It has an `authentication` endpoint and CRUD endpoints for music `albums`. Below is a list of all the endpoints.  
+`POST /auth`  
+`GET /albums`  
+`GET /album/:id`  
+`POST /album`  
+`PUT /album/:id`  
 `DELETE /album/:id`
 
 The `/auth` endpoint is used to authenticate the user and provide a jwt token in return. Rest of the endpoints requires user to be authenticated by passing the token in query params as `token`.
@@ -28,10 +28,10 @@ The authentication for '/ablum' enpoints is done through a middleware which chec
 
 The codebase is divided into several layers to make it more maintainable and readable.
 
-`controllers` - All endpoint handlers are defined in this layer.
-`middlerware` - All middlerwares are defined in this layer.
-`router` - All the routers are defined in this layer.
-`service` - All the business logic for different endpoints are defined here.
+`controllers` - All endpoint handlers are defined in this layer.  
+`middlerware` - All middlerwares are defined in this layer.  
+`router` - All the routers are defined in this layer.  
+`service` - All the business logic for different endpoints are defined here.  
 `util` - Any utility like helper functions or constants are defined here.
 
 I have just started to learn Golang and this is one of the very first assignments I did using golang ecosystem.
@@ -43,5 +43,5 @@ I have just started to learn Golang and this is one of the very first assignment
 
 ### References
 
-go-gin-example - https://github.com/eddycjy/go-gin-example
-Developing a RESTful API with Go and Gin - https://go.dev/doc/tutorial/web-service-gin
+- go-gin-example - https://github.com/eddycjy/go-gin-example
+- Developing a RESTful API with Go and Gin - https://go.dev/doc/tutorial/web-service-gin
